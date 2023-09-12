@@ -1,4 +1,4 @@
-//write a function that randomly returns rock. paper or scissors
+//write a function that randomly returns rock, paper or scissors
 function getComputerChoice() {
   const choices = ["Rock", "Paper", "Scissors"]
   var choice = choices[Math.floor(Math.random() * choices.length)];
@@ -7,7 +7,9 @@ function getComputerChoice() {
 
 //create a function that plays a single round of rock paper scissors
 function playRound(playerSelection, computerSelection) {
-   
+  console.log('Player:'+ ' ' + playerSelection);
+  console.log('Computer:'+ ' ' + computerSelection); 
+
   if (playerSelection.toLowerCase() == "rock" && computerSelection == "Scissors") {
     return "You won.";
   } else if (playerSelection.toLowerCase() == "scissors" && computerSelection == "Paper") {
@@ -24,19 +26,14 @@ function playRound(playerSelection, computerSelection) {
     return "Draw.";
   }
 }
-const playerSelection = "Paper";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
 
 function game(){
-  playRound(playerSelection, getComputerChoice);
-  playRound(playerSelection, getComputerChoice);
-  playRound(playerSelection, getComputerChoice);
-  playRound(playerSelection, getComputerChoice);
-  playRound(playerSelection, getComputerChoice);
+  const playerSelection="Rock";
+  console.log(playRound(playerSelection, getComputerChoice()));
+  console.log(playRound(playerSelection, getComputerChoice()));
+  console.log(playRound(playerSelection, getComputerChoice()));
+  console.log(playRound(playerSelection, getComputerChoice()));
+  console.log(playRound(playerSelection, getComputerChoice()));
 }
-console.log(playRound(playerSelection, getComputerChoice));
-console.log(playRound(playerSelection, getComputerChoice));
-console.log(playRound(playerSelection, getComputerChoice));
-console.log(playRound(playerSelection, getComputerChoice));
+
 game();
