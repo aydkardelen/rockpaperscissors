@@ -1,1 +1,1 @@
-deneme
+included javascript in a project for the first time, learned how to write functions & how to get random item from an array; how to make a paramater case insensitive and how to call previous function inside a new function as well as learning how to ask user input with a propmt window.
